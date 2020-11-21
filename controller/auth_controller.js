@@ -8,7 +8,9 @@ let authController = {
 
   register: (req, res) => {
     res.locals.item = "register"
-    res.render('auth/register')
+    let email = req.query.email
+    res.render('auth/register', { exampleInputEmail1: email });
+    res.redirect('auth/register')
   },
 
   loginSubmit: (req, res) => {
