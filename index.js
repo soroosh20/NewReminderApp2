@@ -11,7 +11,7 @@ let database = require("./database");
 app.use(cookieSession({
   name: 'session',
   keys: ["abc", "def", "ghi"],
-  maxAge: 2*1000
+  maxAge: 3600*1000
 }));
 
 app.use(express.static(path.join(__dirname, "public")));
