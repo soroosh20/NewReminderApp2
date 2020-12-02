@@ -8,10 +8,18 @@
       <% if (item == "reminderList") { %>
         <a class="nav-item nav-link active" href="/reminders">Reminder List</a>
         <a class="nav-item nav-link" href="/reminder/new">Create</a>
+        <a class="nav-item nav-link" href="/friends">Friends</a>
+
       <%}
       if (item == "create") { %>
         <a class="nav-item nav-link" href="/reminders">Reminder List</a>
         <a class="nav-item nav-link active" href="/reminder/new">Create</a>
+        <a class="nav-item nav-link" href="/friends">Friends</a>
+      <%}
+      if (item == "friends") { %> 
+        <a class="nav-item nav-link" href="/reminders">Reminder List</a>
+        <a class="nav-item nav-link" href="/reminder/new">Create</a>
+        <a class="nav-item nav-link active" href="/friends">Friends</a>
       <%}
       else { %> <%} %>
       
