@@ -46,6 +46,8 @@ app.get("/reminder/:id", authCheck, reminderController.listOne)
 
 app.get("/reminder/:id/edit", authCheck, reminderController.edit)
 
+app.get("/friends", reminderController.friends)
+
 app.post("/reminder/", authCheck, reminderController.create)
 
 app.post("/reminder/update/:id", authCheck, reminderController.update)
