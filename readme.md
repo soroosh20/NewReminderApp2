@@ -56,11 +56,13 @@ Every user in your application needs to have a field in their database called pr
 How we are going to complete these tasks 
 
 For completing the first task we have to do the following steps:
-Creating a register.ejs page that will be saved in the  Views/reminder folder.
-The register.ejs page will show the list of the users that are registered on the reminder app.
-In our reminder_controller.js we need to create a function called read_from_database that would read the contents of the fake database that we stored. 
-This function will have a for loop that will iterate through the database contents and the loop will take in content and render it to the register.ejs file 
-The contents of users will be displayed as a list of users for the user to see what users are registered on the reminder app. 
+We created the friends.ejs page in the views/reminder folder. 
+We created "friends" in the navbar, that takes the user to the friends page. 
+In our reminder_controller.js we created a function called friends that takes the user to the friends.ejs page. 
+The friends.ejs has a while loop that iterates through the database contents and the loop take in content and display it on the screen, when a user is on "/friends" link.
+The contents of users displayed as a list of users for the user to see what users are registered on the reminder app. 
+But this task has not been completed, due to shortage of time. We need to make "Add friend" working, that can add the friend and add some CSS to the friends.ejs page. 
+
 
 
 
