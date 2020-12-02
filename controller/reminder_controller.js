@@ -67,7 +67,13 @@ let remindersController = {
     })
     database.cindy.reminders.splice(reminderIndex, 1);
     res.redirect('/reminders');
-  }
+  }, 
+  
+  friends: (req, res) => {
+    res.locals.item = "friends";
+    res.render('reminder/friends', {reminders: database})
+}
+    
 }
 
 module.exports = remindersController;
